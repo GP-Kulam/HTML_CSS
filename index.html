@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!--custom CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <title>Bootstrap form</title>
+  </head>
+  <body>
+    <!--header start-->
+    <header class="container-fluid">
+      <div class="row text-center p-2">
+        <div class="col-12">
+          <h3>Fill Form and Sumbit</h3>
+        </div>
+      </div>
+    </header>
+    <!--header end-->
+
+    <!--form section start-->
+    <section class="form-section p-5">
+      <div class="container">
+        <form action=" https://akrivis-interns-assignment.eu-gb.cf.appdomain.cloud/upload
+        " method="POST" class="needs-validation" novalidate>
+          <div class="form-row pr-sm-5 pl-sm-5">
+            <div class="col-sm-4 form-group">
+              <label for="Name">Full Name</label>
+            </div>
+            <div class="col-sm-8 form-group">
+              <input type="text" class="form-control" name="Name" placeholder="Enter your full name" required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+          </div>
+          <div class="form-row pr-sm-5 pl-sm-5">
+            <div class="col-sm-4 form-group">
+              <label for="Gender">Gender</label>
+            </div>
+            <div class="col-sm-8 form-group">
+              <label for="Gender" class="radio-inline pr-1 pl-1">
+                <input class="mr-2" type="radio" name="Gender" value="male">Male
+              </label>
+              <label for="Gender" class="radio-inline pr-1 pl-1">
+                <input class="mr-2" type="radio" name="Gender" value="female">Female
+              </label>
+              <label for="Gender" class="radio-inline pr-1 pl-1">
+                <input class="mr-2" type="radio" name="Gender" value="other">Other
+              </label>
+            </div>
+          </div>
+          <div class="form-row pr-sm-5 pl-sm-5">
+            <div class="col-sm-4 form-group">
+              <label for="Phone Number">Mobile Number</label>
+            </div>
+            <div class="col-sm-8 form-group">
+              <input type="text" class="form-control" name="Phone Number" placeholder="Mobile/Phone number" required>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+          </div>
+          <div class="form-row pr-sm-5 pl-sm-5">
+            <div class="col-sm-4 form-group">
+              <label for="Age">You are Between</label>
+            </div>
+            <div class="col-sm-8 form-group">
+              <select name="Age" class="form-control" required>
+                <option value="18 to 24">18 to 24</option>
+                <option value="24 to 34">25 to 34</option>
+                <option value="35 to 44">35 to 44</option>
+                <option value="45 to 54">45 to 54</option>
+              </select>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+          </div>
+          <div class="form-row pr-sm-5 pl-sm-5">
+            <div class="col-sm-4 form-group">
+              <label for="Address">Address</label>
+            </div>
+            <div class="col-sm-8 form-group">
+              <textarea name="Address" cols="30" rows="5" class="form-control" placeholder="Enter current address" required></textarea>
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+          </div>
+          <div class="form-row pr-sm-5 pl-sm-5 text-center">
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!--form section end-->
+
+    <!-- Optional JavaScript -->
+
+    <script>
+      // Disable form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Get the forms we want to add validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
